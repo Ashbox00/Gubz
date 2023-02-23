@@ -6,9 +6,10 @@ using UnityEngine.EventSystems;
 [RequireComponent(typeof(Collider))]
 public class Drag3d : MonoBehaviour
 {
-    public Transform parentToReturnTo = null;
+   
     private Camera mainCamera;
     private float CameraDistance;
+    public Vector3 NewWorldPosition;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +21,7 @@ public class Drag3d : MonoBehaviour
     public void OnMouseDrag()
     {
         Vector3 ScreenPosition = new Vector3(Input.mousePosition.x,Input.mousePosition.y, CameraDistance);
-        Vector3 NewWorldPosition = mainCamera.ScreenToWorldPoint(ScreenPosition);
+        NewWorldPosition = mainCamera.ScreenToWorldPoint(ScreenPosition);
         transform.position = NewWorldPosition;
         
     }
