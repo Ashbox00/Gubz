@@ -12,6 +12,7 @@ public class Drag3d : MonoBehaviour
     public Vector3 NewWorldPosition;
 
     private Region _ParentRegion = null;
+    public LayerMask IgnoreMe;
 
     // Start is called before the first frame update
     void Start()
@@ -27,8 +28,8 @@ public class Drag3d : MonoBehaviour
     }
 
     public void OnMouseDrag()
-    {
-        Vector3 ScreenPosition = new Vector3(Input.mousePosition.x,Input.mousePosition.y, CameraDistance - 0.5f);
+    {   IgnoreLayer(0,5);
+        Vector3 ScreenPosition = new Vector3(Input.mousePosition.x,Input.mousePosition.y, CameraDistance - 0.1f);
         NewWorldPosition = mainCamera.ScreenToWorldPoint(ScreenPosition);
         transform.position = NewWorldPosition;
     }
