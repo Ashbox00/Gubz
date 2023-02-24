@@ -10,6 +10,9 @@ public class Drag3d : MonoBehaviour
     private Camera mainCamera;
     private float CameraDistance;
     public Vector3 NewWorldPosition;
+
+    private Region _ParentRegion = null;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,15 +22,21 @@ public class Drag3d : MonoBehaviour
     }
 
     // Update is called once per frame
+    void Update() {
+        _ParentRegion = GetComponentInParent<Region>();
+    }
+
     public void OnMouseDrag()
     {
-        Vector3 ScreenPosition = new Vector3(Input.mousePosition.x,Input.mousePosition.y, CameraDistance);
+        Vector3 ScreenPosition = new Vector3(Input.mousePosition.x,Input.mousePosition.y, CameraDistance - 0.5f);
         NewWorldPosition = mainCamera.ScreenToWorldPoint(ScreenPosition);
         transform.position = NewWorldPosition;
-        
     }
     public void OnMouseUp(){
-        transform.position = transform.parent.position;
+        if (_ParentRegion) {
+            transform.localPosition = Vector3.zero;
+            _ParentRegion.OrganizeChildren();
+        }
     }
 
 }
