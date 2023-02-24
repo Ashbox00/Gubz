@@ -15,6 +15,7 @@ public class Drag3d : MonoBehaviour
     {
         mainCamera = Camera.main;
         CameraDistance = mainCamera.WorldToScreenPoint(transform.position).z;
+        Physics.IgnoreLayerCollision(6,6);
     }
 
     // Update is called once per frame
@@ -24,6 +25,9 @@ public class Drag3d : MonoBehaviour
         NewWorldPosition = mainCamera.ScreenToWorldPoint(ScreenPosition);
         transform.position = NewWorldPosition;
         
+    }
+    public void OnMouseUp(){
+        transform.position = transform.parent.position;
     }
 
 }
