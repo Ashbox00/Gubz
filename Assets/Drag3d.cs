@@ -28,7 +28,7 @@ public class Drag3d : MonoBehaviour
     }
 
     public void OnMouseDrag()
-    {   IgnoreLayer(0,5);
+    {   
         Vector3 ScreenPosition = new Vector3(Input.mousePosition.x,Input.mousePosition.y, CameraDistance - 0.1f);
         NewWorldPosition = mainCamera.ScreenToWorldPoint(ScreenPosition);
         transform.position = NewWorldPosition;
