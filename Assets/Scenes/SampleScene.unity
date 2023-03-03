@@ -178,6 +178,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6612720087655671, guid: 7583fd970fc2ef64a9af72a2683086aa, type: 3}
+      propertyPath: m_Size.y
+      value: 22.228783
+      objectReference: {fileID: 0}
     - target: {fileID: 9138439740104505227, guid: 7583fd970fc2ef64a9af72a2683086aa, type: 3}
       propertyPath: card
       value: 
@@ -229,7 +233,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3, y: 0.9, z: 5}
+  m_Size: {x: 3, y: 0.06, z: 5}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &238371806
 Transform:
@@ -239,7 +243,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 238371803}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.75, y: -0.4, z: -4}
+  m_LocalPosition: {x: -1.75, y: 0.09, z: -4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -272,7 +276,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 657406851}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.38, y: -0.272, z: -8.74}
+  m_LocalPosition: {x: 1.38, y: 0.09, z: -8.74}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -306,7 +310,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5, y: 0.9, z: 1.2}
+  m_Size: {x: 5, y: 0.06, z: 1.2}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &705507993
 GameObject:
@@ -464,7 +468,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 749588389}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.28, y: -0.4, z: -4}
+  m_LocalPosition: {x: 1.28, y: 0.09, z: -4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -498,7 +502,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3, y: 0.9, z: 5}
+  m_Size: {x: 3, y: 0.06, z: 5}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &963194225
 GameObject:
@@ -750,6 +754,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6612720087655671, guid: 7583fd970fc2ef64a9af72a2683086aa, type: 3}
+      propertyPath: m_Size.y
+      value: 22.22878
+      objectReference: {fileID: 0}
     - target: {fileID: 9138439740104505227, guid: 7583fd970fc2ef64a9af72a2683086aa, type: 3}
       propertyPath: card
       value: 
@@ -963,7 +971,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1974438691}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.29, y: -0.4, z: -4}
+  m_LocalPosition: {x: 4.29, y: 0.09, z: -4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -997,5 +1005,5 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3, y: 0.9, z: 5}
+  m_Size: {x: 3, y: 0.06, z: 5}
   m_Center: {x: 0, y: 0, z: 0}
